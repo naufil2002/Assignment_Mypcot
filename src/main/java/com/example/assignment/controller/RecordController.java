@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+	    "http://localhost:3000",
+	    "https://assignment-mypcot-frontend.vercel.app"
+	})
 @RequestMapping("/api")
 public class RecordController {
 
