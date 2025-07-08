@@ -8,7 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+		  "http://localhost:3000",
+		  "https://assignment-mypcot-frontend.vercel.app"
+		})
 @RequestMapping("/auth")
 public class AuthController {
 
